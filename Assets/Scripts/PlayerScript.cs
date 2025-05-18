@@ -11,6 +11,7 @@ public class PlayerScript : MonoBehaviour
     CharacterController charController;
     Camera cameraFPS;
     Vector3 rotationCamera = new Vector3(0, 0, 0);
+    public bool canSprint = true; // Si le joueur peut sprinter ou non (ex: si il est en train de ramasser un objet, il ne peut pas sprinter)
 
     // Valeur Inputs
     Vector2 move = Vector2.zero;
@@ -47,7 +48,8 @@ public class PlayerScript : MonoBehaviour
 
         // Déplace le joueur selon tout les forces et Inputs
         if (Time.timeScale != 0)
-            charController.Move((direction * vitesse) * Time.deltaTime);
+            charController.Move(direction * vitesse * Time.deltaTime);
+            charController.Move(gravite * Time.deltaTime * Vector3.down); // Applique la gravité au joueur
     }
 
     void RotationCamera()
@@ -77,7 +79,14 @@ public class PlayerScript : MonoBehaviour
 
     public void InputSprint(InputAction.CallbackContext movement)
     {
-        sprint = movement.ReadValue<float>();
+        if (canSprint)
+        {
+            sprint = movement.ReadValue<float>();
+        }
+        else
+        {
+            sprint = 0;
+        }
     }
 
     public void InputPause(InputAction.CallbackContext context)
