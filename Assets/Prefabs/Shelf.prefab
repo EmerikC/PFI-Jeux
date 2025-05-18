@@ -1,0 +1,591 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8107547082769675629
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5960280627951732451}
+  - component: {fileID: 1729769335633098939}
+  m_Layer: 0
+  m_Name: Shelf
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5960280627951732451
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8107547082769675629}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -4.3827467, y: -10.507142, z: 4.0554085}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 3137368152149450374}
+  - {fileID: 1492502763779132498}
+  - {fileID: 8381627414486753256}
+  - {fileID: 4928974753036300701}
+  - {fileID: 2213528801051369700}
+  - {fileID: 2890878171121458517}
+  - {fileID: 4298572505274542216}
+  - {fileID: 4788589460903229603}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1729769335633098939
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8107547082769675629}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 6.9895716, y: 1.2805269, z: 0.6983309}
+  m_Center: {x: -0.27091885, y: 0.14026344, z: 0.08552647}
+--- !u!1001 &1386218245562133433
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 5960280627951732451}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 8cda72d662bafe34ca24310f5ce97189, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.3799999
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8cda72d662bafe34ca24310f5ce97189, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.47000024
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8cda72d662bafe34ca24310f5ce97189, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.12939453
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8cda72d662bafe34ca24310f5ce97189, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8cda72d662bafe34ca24310f5ce97189, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8cda72d662bafe34ca24310f5ce97189, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8cda72d662bafe34ca24310f5ce97189, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8cda72d662bafe34ca24310f5ce97189, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8cda72d662bafe34ca24310f5ce97189, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8cda72d662bafe34ca24310f5ce97189, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 8cda72d662bafe34ca24310f5ce97189, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: c8be7a476e30a0a499195bab0df80979, type: 2}
+    - target: {fileID: 919132149155446097, guid: 8cda72d662bafe34ca24310f5ce97189, type: 3}
+      propertyPath: m_Name
+      value: Supermarket Drinks Shelf (4)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 8cda72d662bafe34ca24310f5ce97189, type: 3}
+--- !u!4 &1492502763779132498 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 8cda72d662bafe34ca24310f5ce97189, type: 3}
+  m_PrefabInstance: {fileID: 1386218245562133433}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1815709080933500687
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 5960280627951732451}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 8cda72d662bafe34ca24310f5ce97189, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.2315617
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8cda72d662bafe34ca24310f5ce97189, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.47
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8cda72d662bafe34ca24310f5ce97189, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.27000046
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8cda72d662bafe34ca24310f5ce97189, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071067
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8cda72d662bafe34ca24310f5ce97189, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8cda72d662bafe34ca24310f5ce97189, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8cda72d662bafe34ca24310f5ce97189, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8cda72d662bafe34ca24310f5ce97189, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8cda72d662bafe34ca24310f5ce97189, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8cda72d662bafe34ca24310f5ce97189, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 8cda72d662bafe34ca24310f5ce97189, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: c8be7a476e30a0a499195bab0df80979, type: 2}
+    - target: {fileID: 919132149155446097, guid: 8cda72d662bafe34ca24310f5ce97189, type: 3}
+      propertyPath: m_Name
+      value: Supermarket Drinks Shelf (2)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 8cda72d662bafe34ca24310f5ce97189, type: 3}
+--- !u!4 &2213528801051369700 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 8cda72d662bafe34ca24310f5ce97189, type: 3}
+  m_PrefabInstance: {fileID: 1815709080933500687}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3170695539331217773
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 5960280627951732451}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 8cda72d662bafe34ca24310f5ce97189, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.24
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8cda72d662bafe34ca24310f5ce97189, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.47
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8cda72d662bafe34ca24310f5ce97189, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.27
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8cda72d662bafe34ca24310f5ce97189, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071067
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8cda72d662bafe34ca24310f5ce97189, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8cda72d662bafe34ca24310f5ce97189, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8cda72d662bafe34ca24310f5ce97189, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8cda72d662bafe34ca24310f5ce97189, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8cda72d662bafe34ca24310f5ce97189, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8cda72d662bafe34ca24310f5ce97189, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 8cda72d662bafe34ca24310f5ce97189, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: c8be7a476e30a0a499195bab0df80979, type: 2}
+    - target: {fileID: 919132149155446097, guid: 8cda72d662bafe34ca24310f5ce97189, type: 3}
+      propertyPath: m_Name
+      value: Supermarket Drinks Shelf
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 8cda72d662bafe34ca24310f5ce97189, type: 3}
+--- !u!4 &3137368152149450374 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 8cda72d662bafe34ca24310f5ce97189, type: 3}
+  m_PrefabInstance: {fileID: 3170695539331217773}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3428592936309062334
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 5960280627951732451}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 8cda72d662bafe34ca24310f5ce97189, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.0915618
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8cda72d662bafe34ca24310f5ce97189, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.47000024
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8cda72d662bafe34ca24310f5ce97189, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.12939453
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8cda72d662bafe34ca24310f5ce97189, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8cda72d662bafe34ca24310f5ce97189, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8cda72d662bafe34ca24310f5ce97189, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8cda72d662bafe34ca24310f5ce97189, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8cda72d662bafe34ca24310f5ce97189, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8cda72d662bafe34ca24310f5ce97189, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8cda72d662bafe34ca24310f5ce97189, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 8cda72d662bafe34ca24310f5ce97189, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: c8be7a476e30a0a499195bab0df80979, type: 2}
+    - target: {fileID: 919132149155446097, guid: 8cda72d662bafe34ca24310f5ce97189, type: 3}
+      propertyPath: m_Name
+      value: Supermarket Drinks Shelf (6)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 8cda72d662bafe34ca24310f5ce97189, type: 3}
+--- !u!4 &2890878171121458517 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 8cda72d662bafe34ca24310f5ce97189, type: 3}
+  m_PrefabInstance: {fileID: 3428592936309062334}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4336158945641697123
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 5960280627951732451}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 8cda72d662bafe34ca24310f5ce97189, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.9215615
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8cda72d662bafe34ca24310f5ce97189, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.47
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8cda72d662bafe34ca24310f5ce97189, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.27000046
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8cda72d662bafe34ca24310f5ce97189, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071067
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8cda72d662bafe34ca24310f5ce97189, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8cda72d662bafe34ca24310f5ce97189, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8cda72d662bafe34ca24310f5ce97189, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8cda72d662bafe34ca24310f5ce97189, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8cda72d662bafe34ca24310f5ce97189, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8cda72d662bafe34ca24310f5ce97189, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 8cda72d662bafe34ca24310f5ce97189, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: c8be7a476e30a0a499195bab0df80979, type: 2}
+    - target: {fileID: 919132149155446097, guid: 8cda72d662bafe34ca24310f5ce97189, type: 3}
+      propertyPath: m_Name
+      value: Supermarket Drinks Shelf (3)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 8cda72d662bafe34ca24310f5ce97189, type: 3}
+--- !u!4 &4298572505274542216 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 8cda72d662bafe34ca24310f5ce97189, type: 3}
+  m_PrefabInstance: {fileID: 4336158945641697123}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4894714678940636790
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 5960280627951732451}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 8cda72d662bafe34ca24310f5ce97189, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.63843834
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8cda72d662bafe34ca24310f5ce97189, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.47000024
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8cda72d662bafe34ca24310f5ce97189, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.12939453
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8cda72d662bafe34ca24310f5ce97189, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8cda72d662bafe34ca24310f5ce97189, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8cda72d662bafe34ca24310f5ce97189, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8cda72d662bafe34ca24310f5ce97189, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8cda72d662bafe34ca24310f5ce97189, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8cda72d662bafe34ca24310f5ce97189, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8cda72d662bafe34ca24310f5ce97189, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 8cda72d662bafe34ca24310f5ce97189, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: c8be7a476e30a0a499195bab0df80979, type: 2}
+    - target: {fileID: 919132149155446097, guid: 8cda72d662bafe34ca24310f5ce97189, type: 3}
+      propertyPath: m_Name
+      value: Supermarket Drinks Shelf (5)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 8cda72d662bafe34ca24310f5ce97189, type: 3}
+--- !u!4 &4928974753036300701 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 8cda72d662bafe34ca24310f5ce97189, type: 3}
+  m_PrefabInstance: {fileID: 4894714678940636790}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5043686074529718088
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 5960280627951732451}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 8cda72d662bafe34ca24310f5ce97189, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.7815616
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8cda72d662bafe34ca24310f5ce97189, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.47000024
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8cda72d662bafe34ca24310f5ce97189, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.12939453
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8cda72d662bafe34ca24310f5ce97189, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8cda72d662bafe34ca24310f5ce97189, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8cda72d662bafe34ca24310f5ce97189, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8cda72d662bafe34ca24310f5ce97189, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8cda72d662bafe34ca24310f5ce97189, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8cda72d662bafe34ca24310f5ce97189, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8cda72d662bafe34ca24310f5ce97189, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 8cda72d662bafe34ca24310f5ce97189, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: c8be7a476e30a0a499195bab0df80979, type: 2}
+    - target: {fileID: 919132149155446097, guid: 8cda72d662bafe34ca24310f5ce97189, type: 3}
+      propertyPath: m_Name
+      value: Supermarket Drinks Shelf (7)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 8cda72d662bafe34ca24310f5ce97189, type: 3}
+--- !u!4 &4788589460903229603 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 8cda72d662bafe34ca24310f5ce97189, type: 3}
+  m_PrefabInstance: {fileID: 5043686074529718088}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8348333149835884547
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 5960280627951732451}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 8cda72d662bafe34ca24310f5ce97189, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.49843848
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8cda72d662bafe34ca24310f5ce97189, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.47
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8cda72d662bafe34ca24310f5ce97189, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.27000046
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8cda72d662bafe34ca24310f5ce97189, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071067
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8cda72d662bafe34ca24310f5ce97189, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8cda72d662bafe34ca24310f5ce97189, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8cda72d662bafe34ca24310f5ce97189, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8cda72d662bafe34ca24310f5ce97189, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8cda72d662bafe34ca24310f5ce97189, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8cda72d662bafe34ca24310f5ce97189, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 8cda72d662bafe34ca24310f5ce97189, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: c8be7a476e30a0a499195bab0df80979, type: 2}
+    - target: {fileID: 919132149155446097, guid: 8cda72d662bafe34ca24310f5ce97189, type: 3}
+      propertyPath: m_Name
+      value: Supermarket Drinks Shelf (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 8cda72d662bafe34ca24310f5ce97189, type: 3}
+--- !u!4 &8381627414486753256 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 8cda72d662bafe34ca24310f5ce97189, type: 3}
+  m_PrefabInstance: {fileID: 8348333149835884547}
+  m_PrefabAsset: {fileID: 0}
