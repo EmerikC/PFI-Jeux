@@ -7,6 +7,7 @@ public class PickUpScript : MonoBehaviour
     [SerializeField] GameObject pickUpPosition;
     [SerializeField] float throwForce = 500f;
     [SerializeField] float pickUpRange = 5f;
+    [SerializeField] OutlineScript outlineScript;
 
     private GameObject heldObj;
     private Rigidbody heldObjRb;
@@ -89,6 +90,9 @@ public class PickUpScript : MonoBehaviour
             //change le booléen sprint du joueur
             playerScript.canSprint = false;
 
+            //outline désactivé
+            outlineScript.OutliningEnabled = false;
+
             //Désactive les collisions entre l'objet ramassé et le joueur
             Physics.IgnoreCollision(heldObj.GetComponent<Collider>(), player.GetComponent<Collider>(), true);
         }
@@ -108,6 +112,7 @@ public class PickUpScript : MonoBehaviour
         heldObj.transform.parent = null;
         heldObj = null;
         playerScript.canSprint = true;
+        outlineScript.OutliningEnabled = true;
     }
 
     //Fonction pour déplacer l'objet ramassé
@@ -133,9 +138,10 @@ public class PickUpScript : MonoBehaviour
         heldObjRb.AddForce(transform.forward * throwForce);
         heldObj = null;
         playerScript.canSprint = true;
+        outlineScript.OutliningEnabled = true;
     }
 
-    //Fonction pour éviter le clipping entre l'objet ramassé et le monde lors du jetage
+    //Fonction pour éviter le clipping entre l'objet ramassé et le monde lors du throw/drop
     void StopClipping()
     {
         //calcule la distance entre l'objet ramassé et le joueur
@@ -150,7 +156,7 @@ public class PickUpScript : MonoBehaviour
         if (hits.Length > 1)
         {
             //Change la position de l'objet ramassé pour qu'il soit à la position du joueur
-            heldObj.transform.position = transform.position + new Vector3(0f, -0.5f, 0f); //offset pour éviter que l'objet soit jeté par dessus du joueur
+            heldObj.transform.position = transform.position + new Vector3(0f, -0.3f, 0f); //offset pour éviter que l'objet soit jeté par dessus du joueur
         }
     }
 }
