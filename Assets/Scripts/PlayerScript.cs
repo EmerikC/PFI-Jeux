@@ -1,4 +1,5 @@
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
@@ -18,12 +19,18 @@ public class PlayerScript : MonoBehaviour
     float sprint = 0;
     Vector2 look = Vector2.zero;
 
+    //UI Pause
+    PauseMenu menuPause;
+    bool doOnce = true;
+
+
     // Start is called before the first frame update
     void Start()
     {
         charController = GetComponent<CharacterController>();
         cameraFPS = GetComponentInChildren<Camera>();
         Cursor.lockState = CursorLockMode.Locked;
+        menuPause = GetComponentInChildren<PauseMenu>();
     }
 
 
@@ -32,6 +39,7 @@ public class PlayerScript : MonoBehaviour
     {
         Deplacement();
         RotationCamera();
+        GestionPause();
     }
 
     void Deplacement()
@@ -64,6 +72,17 @@ public class PlayerScript : MonoBehaviour
         // Nous changons la rotation de la camera pour notre valeur
         cameraFPS.transform.rotation = Quaternion.Euler(rotationCamera.x, rotationCamera.y, 0);
 
+    }
+
+    void GestionPause()
+    {
+        if (Input.GetAxis("Pause") > 0 && doOnce || Input.GetButtonDown("Pause"))
+        {
+            doOnce = false;
+            menuPause.Pause();
+        }
+        else if (Input.GetAxis("Pause") <= 0)
+            doOnce = true;
     }
 
     // Inputs
