@@ -31,11 +31,10 @@ public class OutlineScript : MonoBehaviour
         //Utilisation de QueryTriggerInteraction.Collide pour inclure les colliders "isTrigger"
         var hits = Physics.RaycastAll(ray, maxOutlineDistance, ~0, QueryTriggerInteraction.Collide);
 
-        //On trouve l'objet le plus proche avec le tag "CanPickUp"
         var hitObject = hits
             .OrderBy(h => h.distance)
             .Select(h => h.transform)
-            .FirstOrDefault(t => t != null && t.CompareTag("CanPickUp"))?.gameObject;
+            .FirstOrDefault(t => t != null && (t.CompareTag("CanPickUp") || t.CompareTag("canInteract")))?.gameObject;
 
         //On applique ou retire l'outline selon l'objet détecté
         if (hitObject != lastOutlinedObject)

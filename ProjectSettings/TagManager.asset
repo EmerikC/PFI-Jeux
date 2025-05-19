@@ -6,6 +6,9 @@ TagManager:
   tags:
   - CanPickUp
   - Outline
+  - playerCart
+  - canInteract
+  - itemsInCart
   layers:
   - Default
   - TransparentFX
@@ -16,7 +19,7 @@ TagManager:
   - 
   - 
   - holdLayer
-  - 
+  - cartTriggerLayer
   - 
   - 
   - 

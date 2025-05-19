@@ -28,9 +28,12 @@ public class PickUpScript : MonoBehaviour
         {
             if (heldObj == null)
             {
+
                 //Lance une raycast pour détecter les objets ramassables
+                //On ajoute un mask de layer pour eviter les collisions avec le triggerBox dans le Cart
+                int layerMask = ~(1 << LayerMask.NameToLayer("cartTriggerLayer"));
                 RaycastHit hit;
-                if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, pickUpRange))
+                if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, pickUpRange, layerMask))
                 {
                     //Si l'objet touché a le tag "CanPickUp", on le ramasse
                     if (hit.transform.gameObject.tag == "CanPickUp")
