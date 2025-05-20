@@ -9,6 +9,9 @@ TagManager:
   - playerCart
   - canInteract
   - itemsInCart
+  - textItem
+  - listeUI
+  - GameManager
   layers:
   - Default
   - TransparentFX

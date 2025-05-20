@@ -23,6 +23,9 @@ public class PlayerScript : MonoBehaviour
     PauseMenu menuPause;
     bool doOnce = true;
 
+    //Sons de pas
+    AudioSource audioSource;
+    [SerializeField] float movementThreshold = 0.1f;
 
     // Start is called before the first frame update
     void Start()
@@ -31,6 +34,7 @@ public class PlayerScript : MonoBehaviour
         cameraFPS = GetComponentInChildren<Camera>();
         Cursor.lockState = CursorLockMode.Locked;
         menuPause = GetComponentInChildren<PauseMenu>();
+        audioSource = GetComponent<AudioSource>();
     }
 
 
@@ -89,6 +93,16 @@ public class PlayerScript : MonoBehaviour
     public void InputMove(InputAction.CallbackContext movement)
     {
         move = movement.ReadValue<Vector2>();
+
+        // Si le joueur bouge, on joue le son de pas
+        if (move.magnitude > movementThreshold && !audioSource.isPlaying)
+        {
+            audioSource.Play();
+        }
+        else if (move.magnitude <= movementThreshold)
+        {
+            audioSource.Stop();
+        }
     }
 
     public void InputLook(InputAction.CallbackContext movement)
@@ -105,14 +119,6 @@ public class PlayerScript : MonoBehaviour
         else
         {
             sprint = 0;
-        }
-    }
-
-    public void InputPause(InputAction.CallbackContext context)
-    {
-        if (context.phase == InputActionPhase.Performed)
-        {
-            //menuPause.Pause();
         }
     }
 }

@@ -7,6 +7,7 @@ public class PickUpCart : MonoBehaviour
     GameObject cart;
     GameObject handle;
     OutlineScript outlineScript;
+    [SerializeField] GameObject listeUI;
 
 
     void Start()
@@ -61,5 +62,6 @@ public class PickUpCart : MonoBehaviour
     {
         isHolding = !isHolding;
         outlineScript.OutliningEnabled = !outlineScript.OutliningEnabled;
+        listeUI.SetActive(isHolding);
     }
 }
