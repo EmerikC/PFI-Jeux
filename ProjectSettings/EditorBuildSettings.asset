@@ -11,6 +11,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/supermarket.unity
     guid: 85e21eaa67b5a0647967f1091c154880
+  - enabled: 1
+    path: Assets/Scenes/GameWon.unity
+    guid: 95d866514b0e88f4ebf69a361ff2e444
+  - enabled: 1
+    path: Assets/Scenes/GameLost.unity
+    guid: caed9b789be53c94d8e6fbb590458b82
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0

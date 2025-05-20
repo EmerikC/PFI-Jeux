@@ -1,5 +1,6 @@
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class GM_GestionTimer : MonoBehaviour
 {
@@ -13,7 +14,9 @@ public class GM_GestionTimer : MonoBehaviour
         {
             timer = 0;
             // Call the function to end the game
-            //EndGame();
+            SceneManager.LoadScene("GameLost");
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
         }
         updateTimerUI();
     }

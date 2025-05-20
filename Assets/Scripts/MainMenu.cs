@@ -18,5 +18,8 @@ public class MainMenu : MonoBehaviour
     public void GoToMainMenu()
     {
         SceneManager.LoadScene("MainMenu");
+        //activation du curseur
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
     }
 }
