@@ -356,7 +356,7 @@ GameObject:
   - component: {fileID: 8310798668370671957}
   - component: {fileID: 6563343125994495229}
   m_Layer: 0
-  m_Name: lays-chips
+  m_Name: Chips nature
   m_TagString: CanPickUp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

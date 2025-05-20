@@ -2305,7 +2305,7 @@ GameObject:
   - component: {fileID: 5325468146240954720}
   - component: {fileID: 1408835599338126221}
   m_Layer: 0
-  m_Name: eggs
+  m_Name: Oeufs
   m_TagString: CanPickUp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

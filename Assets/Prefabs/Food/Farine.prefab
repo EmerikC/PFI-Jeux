@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 396424615572575978}
   - component: {fileID: 8114021614644243866}
   m_Layer: 0
-  m_Name: flour
+  m_Name: Farine
   m_TagString: CanPickUp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

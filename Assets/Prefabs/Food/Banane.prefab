@@ -98,7 +98,7 @@ GameObject:
   - component: {fileID: 1756660586297936407}
   - component: {fileID: 1520908638710514995}
   m_Layer: 0
-  m_Name: banana
+  m_Name: Banane
   m_TagString: CanPickUp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
