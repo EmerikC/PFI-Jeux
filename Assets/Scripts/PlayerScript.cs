@@ -92,6 +92,13 @@ public class PlayerScript : MonoBehaviour
     // Inputs
     public void InputMove(InputAction.CallbackContext movement)
     {
+        //if game is on pause return
+        if (Time.timeScale == 0)
+        {
+            audioSource.Stop();
+            return;
+        }
+
         move = movement.ReadValue<Vector2>();
 
         // Si le joueur bouge, on joue le son de pas
