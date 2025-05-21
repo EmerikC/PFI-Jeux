@@ -44,6 +44,7 @@ public class PlayerScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // Si le joueur peut bouger, nous allons faire le mouvement et la rotation de la camera
         if (canMove)
         {
             Deplacement();
@@ -61,6 +62,7 @@ public class PlayerScript : MonoBehaviour
                 UI.gameObject.SetActive(false);
             }
         }
+        //En tout temps on gère la pause
         GestionPause();
     }
 

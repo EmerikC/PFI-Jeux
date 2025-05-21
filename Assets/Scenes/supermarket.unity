@@ -22052,7 +22052,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 42.8
+  m_fontSize: 35.8
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -40043,7 +40043,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timer: 180
   timerUI: {fileID: 589746608}
-  player: {fileID: 0}
+  player: {fileID: 18045030}
 --- !u!114 &1129715376
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -49630,7 +49630,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1400806181
 Transform:
   m_ObjectHideFlags: 0
