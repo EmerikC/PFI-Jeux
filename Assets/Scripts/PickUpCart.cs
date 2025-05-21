@@ -23,6 +23,7 @@ public class PickUpCart : MonoBehaviour
         {
             if (!isHolding)
             {
+                //Si le hit est sur le panier, on le prend
                 RaycastHit hit;
                 if (Physics.Raycast(Camera.main.transform.position, Camera.main.transform.TransformDirection(Vector3.forward), out hit))
                 {
@@ -34,12 +35,14 @@ public class PickUpCart : MonoBehaviour
             }
             else
             {
+                //si le joueur a le panier, on le repose
                 TogglePickUp();
             }
         }
 
         if (isHolding)
         {
+            //On deplace le panier avec le joueur
             MoveCart();
         }
     }
@@ -60,8 +63,9 @@ public class PickUpCart : MonoBehaviour
     }
     public void TogglePickUp()
     {
+        //On change l'etat de isHolding
         isHolding = !isHolding;
         outlineScript.OutliningEnabled = !outlineScript.OutliningEnabled;
-        listeUI.SetActive(isHolding);
+        listeUI.SetActive(isHolding); //on affiche ou desaffiche l'UI de la liste
     }
 }

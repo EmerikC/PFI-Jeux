@@ -5,8 +5,8 @@ using UnityEngine.UI;
 
 public class GM_GestionListe : MonoBehaviour
 {
-    [SerializeField] GameObject[] prefabsChoices;
-    public GameObject[] listeObjetsText;
+    [SerializeField] GameObject[] prefabsChoices; //choix que l'on met dans la liste d'epicerie
+    public GameObject[] listeObjetsText; //UI de la liste d'epicerie (text)
     void Start()
     {
         AssignObjects();
@@ -14,19 +14,19 @@ public class GM_GestionListe : MonoBehaviour
 
     private void AssignObjects()
     {
-        //shuffle le tableau de prefabs
+        //shuffle le tableau de prefabs, pour une liste melangee
         ShuffleUtility.Shuffle(prefabsChoices);
 
-        //chercher la longueur de la liste
+        //mettre les noms des items dans la liste d'epicerie
         for (int i = 0; i < listeObjetsText.Length; i++)
         {
-            Console.WriteLine(prefabsChoices[i].name);
             listeObjetsText[i].GetComponent<TextMeshProUGUI>().text = prefabsChoices[i].name;
         }
     }
 
-    public void OnEnterList(GameObject item) //scribble
+    public void OnEnterList(GameObject item) 
     {
+        //Quand un objet rentre dans le panier (grace au box collider trigger), on "strike" la ligne de texte
         for (int i = 0; i < listeObjetsText.Length; i++)
         {
             if (listeObjetsText[i].GetComponent<TextMeshProUGUI>().text == item.name)
@@ -36,8 +36,9 @@ public class GM_GestionListe : MonoBehaviour
         }
     }
 
-    public void OnExitList(GameObject item) //remove scribble
+    public void OnExitList(GameObject item)
     {
+        //Quand un objet sort du panier, on "un-strike" la ligne de texte
         for (int i = 0; i < listeObjetsText.Length; i++)
         {
             if (listeObjetsText[i].GetComponent<TextMeshProUGUI>().text == item.name)
@@ -48,7 +49,7 @@ public class GM_GestionListe : MonoBehaviour
     }
 }
 
-public static class ShuffleUtility
+public static class ShuffleUtility //shuffle un tableau
 {
     public static void Shuffle<T>(this T[] array)
     {

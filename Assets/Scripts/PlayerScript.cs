@@ -98,6 +98,7 @@ public class PlayerScript : MonoBehaviour
 
     void GestionPause()
     {
+        // Si le joueur appuie sur le bouton de pause, nous allons mettre le jeu en pause
         if (Input.GetAxis("Pause") > 0 && doOnce || Input.GetButtonDown("Pause"))
         {
             doOnce = false;
@@ -110,7 +111,7 @@ public class PlayerScript : MonoBehaviour
     // Inputs
     public void InputMove(InputAction.CallbackContext movement)
     {
-        //if game is on pause return
+        //quand le jeu est en pause on ne fait pas jouer le son de pas
         if (Time.timeScale == 0)
         {
             audioSource.Stop();

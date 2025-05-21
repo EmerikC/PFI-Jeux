@@ -13,13 +13,14 @@ public class CartItems : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        //Quand un item rentre dans le panier (box collider trigger), on le met dans le tableau itemsInCart
         for (int i = 0; i < itemsInCart.Length; i++)
         {
             if (itemsInCart[i] == null)
             {
                 itemsInCart[i] = other.gameObject;
-                other.gameObject.transform.SetParent(GameObject.FindGameObjectWithTag("itemsInCart").transform);
-                gestionListe.OnEnterList(other.gameObject);
+                other.gameObject.transform.SetParent(GameObject.FindGameObjectWithTag("itemsInCart").transform); //on met ensuite l'objet comme enfant du panier (pour eviter les bugs de collisions)
+                gestionListe.OnEnterList(other.gameObject); //on met l'UI a jour
                 break;
             }
         }
@@ -27,6 +28,7 @@ public class CartItems : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
+        //Quand un item sort du panier, on le retire du tableau itemsInCart
         int nbItemsInCart = 0;
         for (int i = 0; i < itemsInCart.Length; i++)
         {

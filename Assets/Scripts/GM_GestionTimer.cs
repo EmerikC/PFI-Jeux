@@ -4,27 +4,28 @@ using UnityEngine.SceneManagement;
 
 public class GM_GestionTimer : MonoBehaviour
 {
-    [SerializeField] float timer = 60f * 3f;
-    [SerializeField] GameObject timerUI;
+    [SerializeField] float timer = 60f * 3f; //3 minutes
+    [SerializeField] GameObject timerUI; // fait référence à l'UI du timer
 
     void Update()
     {
+        // on reduit le timer 
         timer -= Time.deltaTime;
         if (timer <= 0)
         {
-            timer = 0;
-            // Call the function to end the game
+            //quand le timer est a zero, game over
+
+            timer = 0; //evite les valeurs negatives
             SceneManager.LoadScene("GameLost");
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
         }
-        updateTimerUI();
+        updateTimerUI(); //MAJ de l'UI
     }
 
     private void updateTimerUI()
     {
-        // Update the UI element with the remaining time
-        // Assuming timerUI has a Text component to display the time
+        //afichage des minutes et secondes
         int minutes = (int)(timer / 60);
         int seconds = (int)(timer % 60);
 
