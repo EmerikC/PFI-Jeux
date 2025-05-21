@@ -12,6 +12,7 @@ TagManager:
   - textItem
   - listeUI
   - GameManager
+  - AI
   layers:
   - Default
   - TransparentFX

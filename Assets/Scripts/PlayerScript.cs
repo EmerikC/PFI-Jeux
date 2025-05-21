@@ -13,6 +13,7 @@ public class PlayerScript : MonoBehaviour
     Camera cameraFPS;
     Vector3 rotationCamera = new Vector3(0, 0, 0);
     public bool canSprint = true; // Si le joueur peut sprinter ou non (ex: si il est en train de ramasser un objet, il ne peut pas sprinter)
+    public bool canMove = true; // Si le joueur peut bouger ou non (si il parle à un AI)
 
     // Valeur Inputs
     Vector2 move = Vector2.zero;
@@ -26,6 +27,8 @@ public class PlayerScript : MonoBehaviour
     //Sons de pas
     AudioSource audioSource;
     [SerializeField] float movementThreshold = 0.1f;
+
+    [SerializeField] Canvas UI; //UI à cacher lors de dialogue
 
     // Start is called before the first frame update
     void Start()
@@ -41,8 +44,23 @@ public class PlayerScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Deplacement();
-        RotationCamera();
+        if (canMove)
+        {
+            Deplacement();
+            RotationCamera();
+
+            if (UI != null)
+            {
+                UI.gameObject.SetActive(true);
+            }
+        }
+        else
+        {
+            if (UI != null)
+            {
+                UI.gameObject.SetActive(false);
+            }
+        }
         GestionPause();
     }
 
