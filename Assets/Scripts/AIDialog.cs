@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections;
 
 public class AIDialog : MonoBehaviour
 {
@@ -41,14 +42,26 @@ public class AIDialog : MonoBehaviour
                             Camera.main.transform.LookAt(headTransform.position);
                         }
 
-                        /////////////////////
-                        //Play audio
-                        ////////////////////
+                        StartCoroutine(PlayAudio(ai));
 
                         break;
                     }
                 }
             }
         }
+    }
+
+    private IEnumerator PlayAudio(GameObject ai)
+    {
+        AudioSource audioSource = ai.GetComponent<AudioSource>();
+        if (audioSource != null)
+        {
+            audioSource.Play();
+            yield return new WaitWhile(() => audioSource.isPlaying);
+        }
+        isTalking = false;
+        outlineScript.OutliningEnabled = true;
+        GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerScript>().canMove = true;
+        ai.GetComponent<AIScript>().agent.enabled = true;
     }
 }
